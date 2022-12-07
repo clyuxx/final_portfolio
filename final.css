@@ -1,0 +1,207 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+    margin:20px 0px;
+}
+.navbar ul li{
+    font-family:'Sono', sans-serif;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    padding:8px 25px;
+    transition:all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction:column;
+    height:840px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    background:url(DSC02680.jpg)no-repeat center center/cover;
+    height: 950px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    /* border: 1px solid white; */
+    border: 1px solid white;
+    align-items: center;
+    position:absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family:century;
+    font-size: 3rem;
+    text-align:center;
+    margin: 40px 0px;
+}
+
+/* About Section */
+#about{
+    background-color: rgb(213, 235, 249);
+    box-sizing:border-box;
+    color:rgb(255, 255, 255);
+}
+p{
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+    padding:8px 25px;
+    margin:20px 0px;
+}
+#pic{
+    display:flex;
+}
+#pic img{
+    width:500px;
+    height:500px;
+}
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align:justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size:2rem;
+}
+
+/*Portfolio Section */
+#portfolio{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(213, 235, 249);
+    color:rgb(255, 255, 255);
+    align-items:center;
+    padding:20px;
+}
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-sizing:border-box;
+}
+.gallery img{
+    width:360px;
+    height:240px;
+    margin: 10px;
+}
+
+/* Resume & Services Section  */
+#resume & services{
+    display:flex;
+    flex-direction:column;
+    padding: 20px;
+}
+a {
+    color: rgb(72, 67, 70);
+    text-align: center;
+    
+  }
+.row{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    box-sizing:border-box;
+}
+.box{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    height:450px;
+    border:1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align: justify;
+    padding:10px;
+    border-radius:15px;
+    background:linear-gradient(to top, rgb(213, 235, 249)50%,white 50%);
+    background-size: 100% 200%;
+    transition:all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color:white;
+    border:none;
+    box-shadow: 0 0 20px rgb(213, 235, 249);
+}
+.box img{
+    width:80px;
+    height:80px;
+    background-color:white;
+    padding: 10px;
+}
+
+/* Contact section*/
+#contact{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(213, 235, 249);
+    color:rgb(255, 255, 255);
+    align-items:center;
+    padding:20px;
+}
+/* Footer section*/
+
+#footer{
+    padding:7% 15%;
+    text-align:center;
+}
+
+.social-icon{
+    margin:20px 10px;
+    width: 37px;
+    height:37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Media Quary Section */
+
+@media(max-width:1028px){
+
+    #title{
+        text-align:center;
+    }
+
+    .title-image{
+        position:statisc;
+        transform:rotate(0);
+    }
+ }
